@@ -30,6 +30,8 @@ interface WidgetProps {
 ## OAuth with SDK
 To contact the server application from your extension you'll have to use the LumApps Javascript SDK.
 
+
+## Form
 <form>
     <input type="text" name="test">
 </form>
