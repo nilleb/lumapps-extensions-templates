@@ -33,28 +33,116 @@ To contact the server application from your extension you'll have to use the Lum
 
 ## Contact
 
-If you are interrested in, you can register to be part of the Lumapps Marketplace program 
-<form onSubmit="submitForm()">
-    <script>
-    function submitForm() {
-        alert('test');
-    }
-    </script>
-    <div>
-        <label for="first_name">First Name</label>
-        <input type="text" name="first_name">
-        <label for="last_name">Last Name</label>
-        <input type="text" name="last_name">
-    </div>
-    <div>
-        <label for="email">Email</label>
-        <input type="text" name="test">
-    </div>
-    <div>
-        <label for="company_name">Company Name</label>
-        <input type="text" name="company_name">
-    </div>
-    <div>
-        <button>Submit</button>
-    </div>
+If you are interrested in, you can register to be part of the LumApps Marketplace program
+<style>
+.form {
+    width        : 380px;
+    height       : 500px;
+    background   : #e6e6e6;
+    border-radius: 8px;
+    box-shadow   : 0 0 40px -10px #000;
+    margin       : calc(50vh - 220px) auto;
+    padding      : 20px 30px;
+    max-width    : calc(100vw - 40px);
+    box-sizing   : border-box;
+    font-family  : 'Montserrat', sans-serif;
+    position     : relative
+}
+
+.form .lumapps-logo {
+    width         : 24px;
+    margin-right  : 12px;
+}
+
+.form h2 {
+    margin        : 10px 0;
+    padding-bottom: 10px;
+    width         : 180px;
+    color         : #1a1c40;
+    border-bottom : 3px solid #1a1c40
+}
+
+.form input {
+    width        : 100%;
+    padding      : 10px;
+    box-sizing   : border-box;
+    background   : none;
+    outline      : none;
+    resize       : none;
+    border       : 0;
+    font-family  : 'Montserrat', sans-serif;
+    transition   : all .3s;
+    border-bottom: 2px solid #1a1c40
+}
+
+.form >input:focus {
+    border-bottom: 2px solid #1a1c40
+}
+
+.form ::placeholder {
+    color: #1a1c40;
+}
+
+p:before {
+    content  : attr(type);
+    display  : block;
+    margin   : 28px 0 0;
+    font-size: 14px;
+    color    : #1a1c40
+}
+
+.form button {
+    float      : right;
+    padding    : 12px 18px;
+    margin     : 8px 0 0;
+    font-family: 'Montserrat', sans-serif;
+    border     : 0px solid #78788c;
+    border-radius: 4px;
+    background : 0;
+    color      : #1a1c40;
+    font-weight: bold;
+    background-color: #ffcf1e;
+    cursor     : pointer;
+    transition : all .3s
+}
+
+.form button:hover {
+    background: #1a1c40;
+    color     : #fff
+}
+
+.form div {
+    content      : 'Hi';
+    position     : absolute;
+    bottom       : -15px;
+    right        : -20px;
+    background   : #50505a;
+    color        : #fff;
+    width        : 320px;
+    padding      : 16px 4px 16px 0;
+    border-radius: 6px;
+    font-size    : 13px;
+    box-shadow   : 10px 10px 40px -14px #000
+}
+
+.form span {
+    margin: 0 5px 0 15px
+}
+</style>
+
+<form class="form">
+    <h2><img class="lumapps-logo" src="https://static.crozdesk.com/web_app_library/providers/logos/000/004/430/original/lumapps-1559230943-logo.png?1559230943"/>CONTACT US</h2>
+    <p type="Name:">
+        <input placeholder="Write your name here.."></input>
+    </p>
+    <p type="Email:">
+        <input placeholder="Let us know how to contact you back.."></input>
+    </p>
+    <p type="Company:">
+        <input placeholder="Write your campany name here..."></input>
+    </p>
+    <p type="Company website:">
+        <input placeholder="Write your campany website URL name here..."></input>
+    </p>
+    <button>Submit</button>
 </form>
