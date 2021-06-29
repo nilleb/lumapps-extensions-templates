@@ -136,9 +136,9 @@ p:before {
         const form = document.querySelector('form[name="contact_form"]');
         const userName = form.elements['name'].value;
         const userEmail = form.elements['email'].value;
-        const companyNane = form.elements['company'].value;
+        const companyName = form.elements['company'].value;
         const companyWebsite = form.elements['companyWebsite'].value;
-        const body = `A new MP Program request from ${userName} (${userEmail}) - ${company} (${companyWebsite})`;
+        const body = `A new MP Program request from ${userName} (${userEmail}) - ${companyName} (${companyWebsite})`;
         const email = 'gregory@lumapps.com'; 
         alert(body);
         const mail = document.createElement("a");
