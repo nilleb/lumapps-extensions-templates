@@ -140,11 +140,11 @@ p:before {
         const companyWebsite = form.elements['companyWebsite'].value;
         const body = `A new MP Program request from ${userName} (${userEmail}) - ${companyName} (${companyWebsite})`;
         const email = 'gregory@lumapps.com'; 
+        const subject = `Marketplace programm request - ${companyName}`
         
         const mail = document.createElement("a");
         mail.target = "_blank";
-        mail.href = `mailto:${email}?body=${encodeURIComponent(body)}`;
-        console.log(mail);
+        mail.href = `mailto:${email}?body=${encodeURIComponent(body)}&subject=${encodeURIComponent(subject)}`;
         mail.click();
     }
 </script>
@@ -164,5 +164,4 @@ p:before {
         <input placeholder="Write your campany website URL name here..." name="companyWebsite"/>
     </p>
     <button type="submit">Submit</button>
-    <a href="mailto:gregory@lumapps.com?body=Hello" target="_blank">Mail Hello</a>
 </form>
