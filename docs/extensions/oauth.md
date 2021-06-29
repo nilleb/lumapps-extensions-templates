@@ -140,7 +140,7 @@ p:before {
         const companyWebsite = form.elements['company_website'].value;
         let body = `A new MP Program request from ${userName} ($userEmail). \n`;
         body += `Request from ${company} (${companyWebsite})`;
-        const email = 'gregory@lumapps.com';//'marketplace-support@lumapps.com';
+        const email = 'gregory@lumapps.com'; 
         alert(body);
         const mail = document.createElement("a");
         mail.href = `mailto:${email}?body=${body}`;
