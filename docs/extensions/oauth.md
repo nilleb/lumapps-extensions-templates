@@ -158,8 +158,8 @@ p:before {
     <p type="Company:">
         <input placeholder="Write your campany name here..." name="company"/>
     </p>
-    <p type="Company website:" name="companyWebsite">
-        <input placeholder="Write your campany website URL name here..."/>
+    <p type="Company website:">
+        <input placeholder="Write your campany website URL name here..." name="companyWebsite"/>
     </p>
     <button>Submit</button>
 </form>
