@@ -143,7 +143,7 @@ p:before {
         
         const mail = document.createElement("a");
         mail.href = `mailto:${email}?body=${body}`;
-        console.log(mailto);
+        console.log(mail);
         mail.click();
     }
 </script>
