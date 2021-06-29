@@ -40,7 +40,7 @@ If you are interrested in, you can register to be part of the LumApps Marketplac
     height       : 520px;
     background   : #e6e6e6;
     border-radius: 8px;
-    box-shadow   : 0 0 40px -10px #000;
+    box-shadow   : 0 0 20px -10px #a9a9a9;
     margin       : calc(50vh - 220px) auto;
     padding      : 20px 30px;
     max-width    : calc(100vw - 40px);
@@ -131,18 +131,37 @@ p:before {
 }
 </style>
 
-<form class="form">
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function submitForm() {
+        const form = document.querySelector('form[name="contact_form"]');
+        const userName = form.elements['name'].value;
+        const userEmail = form.elements['email'].value;
+        const companyNane = form.elements['company'].value;
+        const companyWebsite = form.elements['company_website'].value;
+        let body = `A new MP Program request from ${userName} ($userEmail). \n`;
+        body += `Request from ${company} (${companyWebsite})`;
+        const email = 'gregory@lumapps.com';//'marketplace-support@lumapps.com';
+
+        const link= `mailto:${email}?body=${body}`;
+
+        window.location.href = link;
+        alert(body);
+    }
+</script>
+
+<form class="form" name="contact_form" onSubmit="submitForm()">
     <h2><img class="lumapps-logo" src="https://static.crozdesk.com/web_app_library/providers/logos/000/004/430/original/lumapps-1559230943-logo.png?1559230943"/>CONTACT US</h2>
     <p type="Name:">
-        <input placeholder="Write your name here.."/>
+        <input placeholder="Write your name here.." name="name"/>
     </p>
     <p type="Email:">
-        <input placeholder="Let us know how to contact you back.."/>
+        <input placeholder="Let us know how to contact you back.." name="email"/>
     </p>
     <p type="Company:">
-        <input placeholder="Write your campany name here..."/>
+        <input placeholder="Write your campany name here..." name="company"/>
     </p>
-    <p type="Company website:">
+    <p type="Company website:" name="company_website">
         <input placeholder="Write your campany website URL name here..."/>
     </p>
     <button>Submit</button>
