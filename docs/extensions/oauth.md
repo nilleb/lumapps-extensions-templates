@@ -137,7 +137,7 @@ p:before {
         const userName = form.elements['name'].value;
         const userEmail = form.elements['email'].value;
         const companyNane = form.elements['company'].value;
-        const companyWebsite = form.elements['company_website'].value;
+        const companyWebsite = form.elements['companyWebsite'].value;
         const body = `A new MP Program request from ${userName} (${userEmail}) - ${company} (${companyWebsite})`;
         const email = 'gregory@lumapps.com'; 
         alert(body);
@@ -158,7 +158,7 @@ p:before {
     <p type="Company:">
         <input placeholder="Write your campany name here..." name="company"/>
     </p>
-    <p type="Company website:" name="company_website">
+    <p type="Company website:" name="companyWebsite">
         <input placeholder="Write your campany website URL name here..."/>
     </p>
     <button>Submit</button>
