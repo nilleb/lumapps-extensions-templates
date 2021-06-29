@@ -138,8 +138,7 @@ p:before {
         const userEmail = form.elements['email'].value;
         const companyNane = form.elements['company'].value;
         const companyWebsite = form.elements['company_website'].value;
-        let body = `A new MP Program request from ${userName} ($userEmail). \n`;
-        body += `Request from ${company} (${companyWebsite})`;
+        const body = `A new MP Program request from ${userName} (${userEmail}) - ${company} (${companyWebsite})`;
         const email = 'gregory@lumapps.com'; 
         alert(body);
         const mail = document.createElement("a");
