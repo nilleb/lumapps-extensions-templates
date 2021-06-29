@@ -31,7 +31,30 @@ interface WidgetProps {
 To contact the server application from your extension you'll have to use the LumApps Javascript SDK.
 
 
-## Form
-<form>
-    <input type="text" name="test">
+## Contact
+
+If you are interrested in, you can register to be part of the Lumapps Marketplace program 
+<form onSubmit="submitForm()">
+    <script>
+    function submitForm() {
+        alert('test');
+    }
+    </script>
+    <div>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name">
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name">
+    </div>
+    <div>
+        <label for="email">Email</label>
+        <input type="text" name="test">
+    </div>
+    <div>
+        <label for="company_name">Company Name</label>
+        <input type="text" name="company_name">
+    </div>
+    <div>
+        <button>Submit</button>
+    </div>
 </form>
