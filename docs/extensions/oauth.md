@@ -142,6 +142,7 @@ p:before {
         const email = 'gregory@lumapps.com'; 
         
         const mail = document.createElement("a");
+        mail.target = "_blank";
         mail.href = `mailto:${email}?body=${encodeURIComponent(body)}`;
         console.log(mail);
         mail.click();
@@ -163,5 +164,5 @@ p:before {
         <input placeholder="Write your campany website URL name here..." name="companyWebsite"/>
     </p>
     <button type="submit">Submit</button>
-    <a href="mailto:gregory@lumapps.com?body=Hello">Mail Hello</a>
+    <a href="mailto:gregory@lumapps.com?body=Hello" target="_blank">Mail Hello</a>
 </form>
