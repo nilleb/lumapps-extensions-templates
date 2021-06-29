@@ -131,7 +131,6 @@ p:before {
 }
 </style>
 
-<script src="https://smtpjs.com/v3/smtp.js"></script>
 <script>
     function submitForm() {
         const form = document.querySelector('form[name="contact_form"]');
@@ -142,11 +141,10 @@ p:before {
         let body = `A new MP Program request from ${userName} ($userEmail). \n`;
         body += `Request from ${company} (${companyWebsite})`;
         const email = 'gregory@lumapps.com';//'marketplace-support@lumapps.com';
-
-        const link= `mailto:${email}?body=${body}`;
-
-        window.location.href = link;
         alert(body);
+        const mail = document.createElement("a");
+        mail.href = `mailto:${email}?body=${body}`;
+        mail.click();
     }
 </script>
 
