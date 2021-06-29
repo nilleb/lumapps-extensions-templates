@@ -36,8 +36,8 @@ To contact the server application from your extension you'll have to use the Lum
 If you are interrested in, you can register to be part of the LumApps Marketplace program
 <style>
 .form {
-    width        : 380px;
-    height       : 500px;
+    width        : 440px;
+    height       : 520px;
     background   : #e6e6e6;
     border-radius: 8px;
     box-shadow   : 0 0 40px -10px #000;
@@ -46,7 +46,8 @@ If you are interrested in, you can register to be part of the LumApps Marketplac
     max-width    : calc(100vw - 40px);
     box-sizing   : border-box;
     font-family  : 'Montserrat', sans-serif;
-    position     : relative
+    position     : relative;
+    font-size    : 13px;
 }
 
 .form .lumapps-logo {
@@ -57,7 +58,7 @@ If you are interrested in, you can register to be part of the LumApps Marketplac
 .form h2 {
     margin        : 10px 0;
     padding-bottom: 10px;
-    width         : 180px;
+    width         : 200px;
     color         : #1a1c40;
     border-bottom : 3px solid #1a1c40
 }
@@ -72,11 +73,11 @@ If you are interrested in, you can register to be part of the LumApps Marketplac
     border       : 0;
     font-family  : 'Montserrat', sans-serif;
     transition   : all .3s;
-    border-bottom: 2px solid #1a1c40
+    border-bottom: 2px solid #1a1c40;
 }
 
-.form >input:focus {
-    border-bottom: 2px solid #1a1c40
+.form >input:focus-within {
+    border-bottom: 2px solid #245be7;
 }
 
 .form ::placeholder {
