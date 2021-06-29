@@ -163,5 +163,5 @@ p:before {
         <input placeholder="Write your campany website URL name here..." name="companyWebsite"/>
     </p>
     <button type="submit">Submit</button>
-    <a href="mailto:gregory@lumapps.com">
+    <a href="mailto:gregory@lumapps.com">Mail</a>
 </form>
