@@ -76,7 +76,7 @@ If you are interrested in, you can register to be part of the LumApps Marketplac
     border-bottom: 2px solid #1a1c40;
 }
 
-.form >input:focus-within {
+.form input:focus-within {
     border-bottom: 2px solid #245be7;
 }
 
