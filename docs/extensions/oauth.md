@@ -133,16 +133,16 @@ p:before {
 <form class="form">
     <h2><img class="lumapps-logo" src="https://static.crozdesk.com/web_app_library/providers/logos/000/004/430/original/lumapps-1559230943-logo.png?1559230943"/>CONTACT US</h2>
     <p type="Name:">
-        <input placeholder="Write your name here.."></input>
+        <input placeholder="Write your name here.."/>
     </p>
     <p type="Email:">
-        <input placeholder="Let us know how to contact you back.."></input>
+        <input placeholder="Let us know how to contact you back.."/>
     </p>
     <p type="Company:">
-        <input placeholder="Write your campany name here..."></input>
+        <input placeholder="Write your campany name here..."/>
     </p>
     <p type="Company website:">
-        <input placeholder="Write your campany website URL name here..."></input>
+        <input placeholder="Write your campany website URL name here..."/>
     </p>
     <button>Submit</button>
 </form>
