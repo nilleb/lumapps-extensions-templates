@@ -5,8 +5,6 @@ nav_order: 10
 has_children: true
 ---
 
-
-<!DOCTYPE html>
 <html dir="ltr" lang="en-US" ng-app='dbt' class='no-flash video supports no-touchevents formvalidation webgl no-cssgridlegacy cssgrid cssfilters objectfit object-fit click landscape videoautoplay loaded'>
     <head>
         <meta charset="utf-8">
